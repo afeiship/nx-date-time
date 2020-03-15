@@ -11,9 +11,22 @@ gem 'nx-date-time', git: 'git@github.com:afeiship/nx-date-time.git'
 
 ## usage
 ```rb
-Nx::DateTime::hello
+require "nx-date-time"
 
-# hello world
+puts Nx::DateTime.now
+puts Nx::DateTime.date
+puts Nx::DateTime.time
+puts Nx::DateTime.date_time
+puts Nx::DateTime.ym
+puts Nx::DateTime.ymd_hms
+
+
+# 1584281622
+# 2020-03-15
+# 22:13:42
+# 2020-03-15 22:13:42
+# 2020-03
+# 20200315_221342
 ```
 
 ## build/publish
